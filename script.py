@@ -10,3 +10,5 @@
 import mylib
 print(mylib.get_result("some"))
 print(mylib.count_int(2,9))
+import my_lib
+print(my_lib.get_result("some"))

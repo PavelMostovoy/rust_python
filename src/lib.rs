@@ -3,7 +3,7 @@ extern crate cpython;
 
 use cpython::{py_fn, py_module_initializer, PyResult, Python};
 
-py_module_initializer!(mylib, |py, m| {
+py_module_initializer!(my_lib, |py, m| {
     m.add(py, "__doc__", "This module is implemented in Rust.")?;
     m.add(py, "get_result", py_fn!(py, get_result(val: &str)))?;
     m.add(py, "do_something", py_fn!(py, do_something()))?;
